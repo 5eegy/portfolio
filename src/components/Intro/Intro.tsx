@@ -1,16 +1,15 @@
-import Loopstudio from "../../assets/loopstudio.png";
+// import Loopstudio from "../../assets/loopstudio.png";
 import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
     <div className="mt-12 p-3 h-[85vh] min-h-fit pt-12">
-      <motion.img
+      <motion.p
         animate={{ y: 0 }}
         initial={{ y: -250 }}
         transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
-        src={Loopstudio}
-        className="w-[120px] h-[70px]my-3"
-      />
+        className="w-[120px] h-[70px] bg-red-500 my-3"
+      ></motion.p>
       <motion.h1
         initial={{
           height: "0px",
@@ -71,30 +70,29 @@ const Intro = () => {
           opacity: 1,
         }}
         transition={{
-          delay:2
+          delay: 2,
         }}
         className="mt-10 flex flex-col justify-center items-center"
       >
         <p className="text-gray-700 text-xs">scroll down</p>
-        <motion.p 
-        initial={{
-          y: 0,
-          rotate: "-90deg"
-
-        }}
-
-        animate={{
-          y: [5, 10, 15,20, 15, 10, 5],
-          rotate: "-90deg"
-        }}
-
-        transition={{
-          repeat: Infinity,
-          // delay: 2,
-          duration: 1
-
-        }}
-        className="-rotate-90 w-4 text-xl">&#x276E;</motion.p>
+        <motion.p
+          initial={{
+            y: 0,
+            rotate: "-90deg",
+          }}
+          animate={{
+            y: [5, 10, 15, 20, 15, 10, 5],
+            rotate: "-90deg",
+          }}
+          transition={{
+            repeat: Infinity,
+            // delay: 2,
+            duration: 1,
+          }}
+          className="-rotate-90 w-4 text-xl"
+        >
+          &#x276E;
+        </motion.p>
       </motion.div>
     </div>
   );
