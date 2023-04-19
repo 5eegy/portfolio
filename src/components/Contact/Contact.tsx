@@ -1,29 +1,49 @@
 import React from "react";
+import { Heading } from "../Others/Heading";
 
 const Contact = () => {
   return (
-    <div>
-      <p className="text-yellow-400 text-base">{"<CONTACT/>"}</p>
-      <a href="https://github.com/segowo" target="_blank" className="text-blue-400 block mt-2 underline">
-        {" <github/>"}
+    <div className="-mt-4 pb-12">
+      <Heading head="CONTACT" position="left"/>
+      <a
+        href="mailto:segunowo247@gmail.com"
+        target="_blank"
+        className="block text-xl mt-5 mx-3"
+      >
+        SegunOwo247@gmail.com
       </a>
 
-      <a href="https://linkedin.com/in/segowo" target="_blank" className="text-blue-400 block mt-2 underline">
-        {" <linkedin/>"}
-      </a>
+      <div className="text-left mt-2 w-2/3 opacity-60 px-3">
+        <a
+          href="https://github.com/mrseego"
+          className="inline-block border m-1 p-1 w-20  text-xs bg-black rounded-lg hover: text-center"
+        >
+          github
+        </a>
 
-      <a href="https://twitter.com/seego" target="_blank" className="text-blue-400 block mt-2 underline">
-        {" <twitter/>"}
-      </a>
+        <a
+          href="https://linkedin.com/in/mrseego"
+          className="inline-block border m-1 p-1 w-20  text-xs bg-black rounded-lg hover: text-center"
+        >
+          linkedin
+        </a>
 
-      <a href="https://dev.to/segow" target="_blank" className="text-blue-400 block mt-2 underline">
-        {" <devto/>"}
-      </a>
+        <a
+          href="https://twitter.com/seego"
+          className="inline-block border m-1 p-1 w-20  text-xs bg-black rounded-lg hover: text-center"
+        >
+          twitter
+        </a>
 
+        <a
+          href="https://medium/seego"
+          className="inline-block border m-1 p-1 w-20  text-xs bg-black rounded-lg hover: text-center"
+        >
+          medium
+        </a>
+      </div>
 
-      <a href="mailto:segunowo247@gmail.com" target="_blank" className="text-blue-400 block mt-2 underline">
-        {" <email/>"}
-      </a>
+      <p className="text-xs opacity-30 text-center my-8">&copy; SEEGO 2023</p>
     </div>
   );
 };

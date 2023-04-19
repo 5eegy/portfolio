@@ -1,38 +1,45 @@
+import { Heading } from "../Others/Heading";
+import { motion } from "framer-motion";
+
 const Projects = () => {
   return (
-    <div className="">
-      <p className="mt-5 mb-2 text-sm text-yellow-400">{"<PROJECTS/>"}</p>
+    <div className="border-t">
+      <Heading head="PROJECTS " position="right" />
 
       <ProjComp
-        name="musica"
+        name="MUSICA"
         stacks="ReactJs, Tailwind, Firebase"
-        info="Musica is a music streaming app created for users to upload and stream  their favourite songs."
+        info="MUSIC STREAMING SITE"
         live="https://musicang.vercel.app"
-        repo="https://github.com/segowo/musica"
+        repo="https://github.com/mrseego/musica"
+        position="left"
       />
 
       <ProjComp
-        name="venta"
-        stacks="ReactJs, Tailwind, FramerMotion, Redux, Firebase, Paystac Integration"
-        info="Venta is an e-commerce website where users are able to search for their favorite product, filter their search, add to cart and make payment with the Paystack platform"
+        name="VENTA"
+        stacks="ReactJs, Tailwind, FramerMotion, Redux, Firebase"
+        info="ECOMMERCE WEBSITE"
         live="https://ventashop.netlify.app"
-        repo="https://github.com/segowo/ventashop"
+        position="right"
+        repo="https://github.com/mrseego/ventashop"
       />
 
       <ProjComp
-        name="vanx"
+        name="VANX"
         stacks="React, SASS & Typescript"
-        info="Vanx is an AI assisted project where users get the latest news on a particular topic based on their Voice input, The AI can also read the news article to the users if the user likes."
+        info="AI NEWS WEBSITE"
         live="https://vanxnews.netlify.app"
-        repo="https://github.com/segowo/vanxnews"
+        repo="https://github.com/mrseego/vanxnews"
+        position="left"
       />
 
       <ProjComp
-        name="Robocht"
+        name="ROBOCHT"
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
-        info="Robocht is an AI platform that uses the OpenAI's API and it works exactly just like the ChatGPT"
+        info="AI CHAT BOT"
         live="https://robocht.vercel.app"
-        repo="https://github.com/segowo/robocht"
+        repo="https://github.com/mrseego/robocht"
+        position="right"
       />
     </div>
   );
@@ -46,29 +53,63 @@ function ProjComp({
   stacks,
   live,
   repo,
+  position,
 }: {
   name: string;
   info: string;
   stacks: string;
   live: string;
   repo: string;
+  position: string;
 }) {
   return (
-    <div className="my-5 text-xs">
-      <a href={live} target="_blank" className="text-red-500 text-sm block mt-2 underline">
-        {"<" + name + ">"}
-      </a>
-      <p className="text-purple-400">{info}</p>
-      <p className="text-xs text-green-400 mt-4 mb-1">{"<stacks/>"}</p>
-      <p className="text-purple-400">{stacks}</p>
+    <div
+      className={
+        " border-b h-full px-3 min-h-[250px] my-5 pb-5 text-xs  text-" +
+        position
+      }
+    >
+      <p className="text-xs -mt-4 opacity-40">{stacks}</p>
 
-      <a href={live} target="_blank" className="text-blue-400 block mt-2 underline">
-        {"<livelink/>"}
-      </a>
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: position === "right"? "20vw": "-20vw"
+        }}
+        whileInView={{
+          opacity: 1,
+          x:0
+        }}
+        viewport={{
+          once: true,
+          amount: 0.3
+        }}
+        className=""
+      >
+        <h1 className=" block text-4xl mt-4 leading-tight opacity-40">
+          {name} - {info}
+        </h1>
 
-      <a href={repo} target="_blank" className="text-blue-400 block mt-2 underline">
-        {"<repo/>"}
-      </a>
+        <div className="flex justify-between mt-5">
+          <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-200 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
+            <a
+              href={live}
+              className="block p-1 text-xs bg-black rounded-lg hover: text-center"
+            >
+              Visit Site
+            </a>
+          </div>
+
+          <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-200 hover:to-pink-200 hover:from-red-200 hover:via-yellow-200 hover:shadow-md hover:shadow-yellow-400">
+            <a
+              href={repo}
+              className="block p-1 text-xs bg-black rounded-lg hover: text-center"
+            >
+              repo
+            </a>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
