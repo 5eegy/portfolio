@@ -1,15 +1,16 @@
-// import Loopstudio from "../../assets/loopstudio.png";
+import Loopstudio from "../../assets/loopstudio.png";
 import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
-    <div className="mt-12 p-3 h-[85vh] min-h-fit pt-12">
-      <motion.p
+    <div className="mt-12 p-3 h-[85vh] min-h-fit pt-12 lg:h-full lg:fixed lg:w-1/2">
+      <motion.img
+       src={Loopstudio} alt="Projects image"
         animate={{ y: 0 }}
         initial={{ y: -250 }}
         transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
         className="w-[120px] h-[70px] bg-red-500 my-3"
-      ></motion.p>
+      />
       <motion.h1
         initial={{
           height: "0px",
