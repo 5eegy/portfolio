@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-t">
+    <div className="border-t  border-white border-opacity-30">
       <Heading head="PROJECTS " position="right" />
 
       <ProjComp
@@ -65,11 +65,11 @@ function ProjComp({
   return (
     <div
       className={
-        " border-b h-full px-3 min-h-[250px] my-5 pb-5 text-xs  text-" +
+        " border-b border-white border-opacity-20 h-full px-3 min-h-[350px] my-5 pb-5 text-xs  text-" +
         position
       }
     >
-      <p className="text-xs -mt-4 opacity-40">{stacks}</p>
+      <p className="text-xs lg:text-sm -mt-4 opacity-40">{stacks}</p>
 
       <motion.div
         initial={{
@@ -84,9 +84,10 @@ function ProjComp({
           once: true,
           amount: 0.3
         }}
+        transition={{duration: 1}}
         className=""
       >
-        <h1 className=" block text-4xl mt-4 leading-tight opacity-40">
+        <h1 className=" block text-5xl lg:text-8xl font-bold mt-4 leading-tight opacity-40">
           {name} - {info}
         </h1>
 
@@ -94,7 +95,7 @@ function ProjComp({
           <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-200 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
             <a
               href={live}
-              className="block p-1 text-xs bg-black rounded-lg hover: text-center"
+              className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
             >
               Visit Site
             </a>
@@ -103,7 +104,7 @@ function ProjComp({
           <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-200 hover:to-pink-200 hover:from-red-200 hover:via-yellow-200 hover:shadow-md hover:shadow-yellow-400">
             <a
               href={repo}
-              className="block p-1 text-xs bg-black rounded-lg hover: text-center"
+              className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
             >
               repo
             </a>
