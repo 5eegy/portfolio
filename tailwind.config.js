@@ -3,7 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {roboto: ['Roboto', "sans-serif"], neue: ['Bebas Neue', "cursive"], openSauce:['open sauce one', "sans-serif"]},
-    extend: {},
+    extend: {
+      backgroundImage: {}
+    },
   },
   plugins: [],
 };

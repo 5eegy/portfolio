@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SedgwickAveDisplay-Regular
+font link: https://fonts.google.com/specimen/Sedgwick+Ave+Display
+font author: Kevin Burke
+font author site: http://www.blastframe.com/
+
+
+{"bg":"#BA0FE2","icon":"#45078C","font":"#FFFFFF","slogan":"#ffffff"}
+      
