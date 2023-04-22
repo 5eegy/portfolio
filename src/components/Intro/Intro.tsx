@@ -1,19 +1,29 @@
-import Loopstudio from "../../assets/loopstudio.png";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Intro = () => {
+  const [num, setNum] = useState(1);
+
+  useEffect(() => {
+    setTimeout(() => {
+        if (num < 7) {
+          setNum(num+1);
+        } else {
+          setNum(1)
+        }  
+    }, 500);
+  });
+
   return (
     <div className="mt-12 h-[95vh] px-3 min-h-[700px] pt-8 lg:justify-center w-full flex flex-col justify-evenly">
-      <motion.div
- 
-      className="flex flex-col justify-evenly lg:flex-row-reverse items-start lg:items-center h-full w-full  min-w-fit min-h-fit ">
+      <motion.div className="flex flex-col justify-between lg:flex-row-reverse items-start lg:items-center h-full w-full  min-w-fit min-h-fit ">
         <motion.img
-          src={Loopstudio}
+          src={`/src/assets/projects/project-${num}.png`}
           alt="Projects image"
           animate={{ y: 0 }}
           initial={{ y: -250 }}
           transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
-          className="w-1/2 lg:h-full lg:w-2/5 h-full mt-3 lg:-mt-8 block"
+          className="w-3/5 md:w-2/3 max-w-[250px] lg:h-40 lg:w-1/5 h-full  mt-3 lg:-mt-8 block"
         />
         <motion.h1
           initial={{
@@ -23,10 +33,10 @@ const Intro = () => {
             height: "100%",
           }}
           transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
-              className="text-6xl lg:text-8xl bg-clip-text text-center w-full lg:w-3/5 text-transparent flex flex-wrap bg-gradient-to-r duration-200 from-purple-400 via-red-500 to-yellow-400 font-bold"
+          className="text-6xl mt-16 lg:mt-0 md:text-9xl bg-clip-text text-start w-full lg:w-3/5 text-transparent flex flex-wrap bg-gradient-to-r duration-200 from-purple-400 via-red-500 to-yellow-400 font-bold"
         >
           <motion.span
-            className="bg-clip-text leading-none my-auto"
+            className="bg-clip-text leading-tight my-auto"
             initial={{
               background: "linear-gradient(to right, purple,yellow, purple)",
               opacity: 0,
@@ -43,14 +53,18 @@ const Intro = () => {
               ease: "easeIn",
             }}
           >
-            {" "}
-            FRONTEND <br /> DEVELOPER
+            {
+               `FRONTEND DEVELOPER`.split(" ").map((item) =>{
+                return <span key={item} className="hover:bg-gradient-to-r duration-500 hover:from-purple-400 hover:via-red-500 hover:bg-clip-text hover:text-transparent hover:to-yellow-400">{item} <br></br> </span>
+              })
+            }
+          
           </motion.span>
         </motion.h1>
       </motion.div>
 
-      <div className="h-full -mt-0 lg:flex items-center justify-between">
-        <h3 className=" text-5xl lg:text-7xl leading-tight">
+      <div className="h-full lg:-mt-28 mt-2 lg:flex items-center justify-between">
+        <h3 className=" text-5xl md:text-7xl leading-tight font-neue">
           <span className="opacity-30">CREATING</span>
           <br /> <span className="opacity-80 text-white">EXCEPTIONAL</span>
           <motion.p
@@ -80,7 +94,7 @@ const Intro = () => {
           transition={{
             delay: 2,
           }}
-          className="mt-24 flex flex-col justify-center items-center"
+          className="mt-10 lg:mt-0 flex flex-col justify-center items-center"
         >
           <p className="text-white opacity-70 text-xs">scroll down</p>
           <motion.p

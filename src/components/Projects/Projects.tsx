@@ -36,7 +36,7 @@ const Projects = () => {
       <ProjComp
         name="ROBOCHT"
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
-        info="AI CHAT BOT"
+        info="AI CHAT BOT WEBSITE"
         live="https://robocht.vercel.app"
         repo="https://github.com/mrseego/robocht"
         position="right"
@@ -65,11 +65,11 @@ function ProjComp({
   return (
     <div
       className={
-        " border-b border-white border-opacity-20 h-full px-3 min-h-[350px] my-5 pb-5 text-xs  text-" +
+        " border-b border-white border-opacity-20 font-roboto flex items-center relative h-full w-full px-3  min-h-[350px] my-5 pb-5 text-xs  text-" +
         position
       }
     >
-      <p className="text-xs lg:text-sm -mt-4 opacity-40">{stacks}</p>
+      <p className={`text-sm lg:text-sm -mt-4 opacity-40 font-openSauce px-3 absolute top-0 ${position === "right" ? "right-0" : "left-0"}`}>{stacks.toUpperCase()}</p>
 
       <motion.div
         initial={{
@@ -81,23 +81,25 @@ function ProjComp({
           x:0
         }}
         viewport={{
-          once: true,
+          // once: true,
           amount: 0.3
         }}
         transition={{duration: 1}}
-        className=""
+        className={``}
       >
-        <h1 className=" block text-5xl lg:text-8xl font-bold mt-4 leading-tight opacity-40">
-          {name} - {info}
+        <h1 className=" block text-5xl lg:text-8xl font-bold ju mt-4 leading-tight opacity-40">
+          {`${name} - ${info}`.split(" ").map((item) =>{
+                return <span key={item} className="hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200">{item} </span>
+              })}
         </h1>
 
-        <div className="flex justify-between mt-5">
+        <div className="flex justify-between mt-5 font-openSauce">
           <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-200 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
             <a
               href={live}
               className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
             >
-              Visit Site
+              VISIT SITE
             </a>
           </div>
 
@@ -106,7 +108,7 @@ function ProjComp({
               href={repo}
               className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
             >
-              repo
+             REPO
             </a>
           </div>
         </div>
