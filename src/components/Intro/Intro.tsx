@@ -1,29 +1,18 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "../../assets/giphy.gif"
 
 const Intro = () => {
-  const [num, setNum] = useState(1);
-
-  useEffect(() => {
-    setTimeout(() => {
-        if (num < 7) {
-          setNum(num+1);
-        } else {
-          setNum(1)
-        }  
-    }, 500);
-  });
 
   return (
-    <div className="mt-12 h-[95vh] px-3 min-h-[700px] pt-8 lg:justify-center w-full flex flex-col justify-evenly">
+    <div className="mt-12 h-[95vh] px-3 min-h-[700px] lg:justify-center w-full flex flex-col justify-evenly">
       <motion.div className="flex flex-col justify-between lg:flex-row-reverse items-start lg:items-center h-full w-full  min-w-fit min-h-fit ">
         <motion.img
-          src={`/src/assets/projects/project-${num}.png`}
+          src={Image}
           alt="Projects image"
           animate={{ y: 0 }}
           initial={{ y: -250 }}
           transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
-          className="w-3/5 md:w-2/3 max-w-[250px] lg:h-40 lg:w-1/5 h-full  mt-3 lg:-mt-8 block"
+          className="w-3/5 md:w-2/3 max-w-[250px] lg:h-56 h-full  -mt-8 lg:-mt-8 block filter brightness-75"
         />
         <motion.h1
           initial={{
@@ -33,7 +22,7 @@ const Intro = () => {
             height: "100%",
           }}
           transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
-          className="text-6xl mt-16 lg:mt-0 md:text-9xl bg-clip-text text-start w-full lg:w-3/5 text-transparent flex flex-wrap bg-gradient-to-r duration-200 from-purple-400 via-red-500 to-yellow-400 font-bold"
+          className="text-6xl -mt-4 lg:mt-0 md:text-9xl bg-clip-text text-start w-full lg:w-3/5 text-transparent flex flex-wrap bg-gradient-to-r duration-200 from-purple-400 via-red-500 to-yellow-400 font-bold"
         >
           <motion.span
             className="bg-clip-text leading-tight my-auto"
