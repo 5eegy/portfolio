@@ -1,6 +1,6 @@
 import { Heading } from "../Others/Heading";
 import { motion } from "framer-motion";
-import Image from "../../assets/loopstudio.png";
+import Image from "../../assets/image-2.jpg";
 
 const bio = ""
 
@@ -28,9 +28,9 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src={"src/assets/image-2.jpg"}
+          src={Image}
           alt="Projects image"
-          className="w-full block  h-full filter brightness-75 absolute top-3 left-5 z-[102]"
+          className="w-full block  h-full filter brightness-75 absolute top-3 left-5 z-[102] rounded-md"
         />
         <p className=" border border-white opacity-20 z-[100] w-full h-full"></p>
         <p className="mt-8 text-center text-white text-xs font-neue">
@@ -70,7 +70,7 @@ const About = () => {
         innovative websites that meet the needs of clients and users. I take
         ownership of my tasks and see them through to completion, but thrive in
         a collaborative environment where I can learn from and contribute to my team.`.split(" ").map((item, i)=>{
-          return <span key={i} className="opacity-50 hover:opacity-100 hover:text-2xl hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200">{item.toUpperCase()} </span>
+          return <span key={i} className="opacity-50 hover:opacity-100 hover:text-base lg:hover:text-xl hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200">{item.toUpperCase()} </span>
         })
        }
 
