@@ -1,17 +1,18 @@
+import { forwardRef } from "react";
 import { Heading } from "../Others/Heading";
 import { motion } from "framer-motion";
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="border-t  border-white border-opacity-30">
+    <div ref={ref} className="border-t  border-white border-opacity-30">
       <Heading head="PROJECTS " position="right" />
 
       <ProjComp
         name="MUSICA"
-        stacks="ReactJs, Tailwind, Firebase"
+        stacks="ReactJs, Tailwind,Redux-Toolkit, Firebase"
         info="MUSIC STREAMING SITE"
         live="https://musicang.vercel.app"
-        repo="https://github.com/mrseego/musica"
+        repo="https://github.com/mrseego/Musica"
         position="left"
       />
 
@@ -21,7 +22,7 @@ const Projects = () => {
         info="ECOMMERCE WEBSITE"
         live="https://ventashop.netlify.app"
         position="right"
-        repo="https://github.com/mrseego/ventashop"
+        repo="https://github.com/mrseego/venta-ecommerce"
       />
 
       <ProjComp
@@ -29,7 +30,7 @@ const Projects = () => {
         stacks="React, SASS & Typescript"
         info="AI NEWS WEBSITE"
         live="https://vanxnews.netlify.app"
-        repo="https://github.com/mrseego/vanxnews"
+        repo="https://github.com/mrseego/vanxnews-ai"
         position="left"
       />
 
@@ -38,12 +39,21 @@ const Projects = () => {
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
         info="AI CHAT BOT WEBSITE"
         live="https://robocht.vercel.app"
-        repo="https://github.com/mrseego/robocht"
+        repo="https://github.com/mrseego/Robo-chat"
         position="right"
+      />
+
+      <ProjComp
+        name="MYBANKR"
+        stacks="React, Styled Components & Firebase"
+        info="FINTECH WEBSITE"
+        live="https://mybankr.netlify.app"
+        repo="https://github.com/mrseego/mybankr"
+        position="left"
       />
     </div>
   );
-};
+});
 
 export default Projects;
 
@@ -69,28 +79,41 @@ function ProjComp({
         position
       }
     >
-      <p className={`text-sm lg:text-sm -mt-4 opacity-40 font-openSauce px-3 absolute top-0 ${position === "right" ? "right-0" : "left-0"}`}>{stacks.toUpperCase()}</p>
+      <p
+        className={`text-sm lg:text-sm -mt-4 opacity-40 font-openSauce px-3 absolute top-0 ${
+          position === "right" ? "right-0" : "left-0"
+        }`}
+      >
+        {stacks.toUpperCase()}
+      </p>
 
       <motion.div
         initial={{
           opacity: 0,
-          x: position === "right"? "20vw": "-20vw"
+          x: position === "right" ? "20vw" : "-20vw",
         }}
         whileInView={{
           opacity: 1,
-          x:0
+          x: 0,
         }}
         viewport={{
           // once: true,
-          amount: 0.3
+          amount: 0.3,
         }}
-        transition={{duration: 1}}
+        transition={{ duration: 0.4 }}
         className={``}
       >
         <h1 className=" block text-5xl lg:text-8xl font-bold ju mt-4 leading-tight opacity-40">
-          {`${name} - ${info}`.split(" ").map((item) =>{
-                return <span key={item} className="hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200">{item} </span>
-              })}
+          {`${name} - ${info}`.split(" ").map((item) => {
+            return (
+              <span
+                key={item}
+                className="hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200"
+              >
+                {item}{" "}
+              </span>
+            );
+          })}
         </h1>
 
         <div className="flex justify-between mt-5 font-openSauce">
@@ -98,6 +121,7 @@ function ProjComp({
             <a
               href={live}
               className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
+              target="_blank"
             >
               VISIT SITE
             </a>
@@ -106,9 +130,10 @@ function ProjComp({
           <div className="block p-[1px] mt-5 mx-3 w-24 rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-200 hover:to-pink-200 hover:from-red-200 hover:via-yellow-200 hover:shadow-md hover:shadow-yellow-400">
             <a
               href={repo}
+              target="_blank"
               className="block p-1 text-xs lg:text-sm bg-black rounded-lg hover: text-center"
             >
-             REPO
+              REPO
             </a>
           </div>
         </div>

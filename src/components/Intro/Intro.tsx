@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import Image from "../../assets/giphy.gif"
+import Image from "../../assets/gifs/giphy.gif";
+import { forwardRef, useRef } from "react";
 
-const Intro = () => {
-
+const Intro = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="mt-12 h-[95vh] px-3 min-h-[700px] lg:justify-center w-full flex flex-col justify-evenly">
+    <div
+      ref={ref}
+      className="mt-12 h-[95vh] px-3 min-h-[700px] lg:justify-center w-full flex flex-col justify-evenly"
+    >
       <motion.div className="flex flex-col justify-between lg:flex-row-reverse items-start lg:items-center h-full w-full  min-w-fit min-h-fit ">
         <motion.img
           src={Image}
@@ -42,12 +45,16 @@ const Intro = () => {
               ease: "easeIn",
             }}
           >
-            {
-               `FRONTEND DEVELOPER`.split(" ").map((item) =>{
-                return <span key={item} className="hover:bg-gradient-to-r duration-500 hover:from-purple-400 hover:via-red-500 hover:bg-clip-text hover:text-transparent hover:to-yellow-400">{item} <br></br> </span>
-              })
-            }
-          
+            {`FRONTEND DEVELOPER`.split(" ").map((item) => {
+              return (
+                <span
+                  key={item}
+                  className="hover:bg-gradient-to-r duration-500 hover:from-purple-400 hover:via-red-500 hover:bg-clip-text hover:text-transparent hover:to-yellow-400"
+                >
+                  {item} <br></br>{" "}
+                </span>
+              );
+            })}
           </motion.span>
         </motion.h1>
       </motion.div>
@@ -83,7 +90,7 @@ const Intro = () => {
           transition={{
             delay: 2,
           }}
-          className="mt-10 lg:mt-0 flex flex-col justify-center items-center"
+          className="mt-10 lg:mt-0 flex flex-col justify-center items-center cursor-pointer"
         >
           <p className="text-white opacity-70 text-xs">scroll down</p>
           <motion.p
@@ -107,6 +114,5 @@ const Intro = () => {
       </div>
     </div>
   );
-};
-
+});
 export default Intro;
