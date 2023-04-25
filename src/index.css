@@ -3,3 +3,7 @@
   @tailwind utilities;
   @tailwind base;
 @tailwind components;
+
+html{
+  scroll-behavior: smooth;
+}

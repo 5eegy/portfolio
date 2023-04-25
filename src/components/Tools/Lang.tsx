@@ -10,7 +10,7 @@ const Lang = ({ children }: { children: string }) => {
         rotateZ: 0,
       }}
       transition={{
-        duration: 0.7,
+        duration: 0.4,
       }}
       viewport={
         {
