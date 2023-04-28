@@ -12,7 +12,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="ReactJs, Tailwind,Redux-Toolkit, Firebase"
         info="MUSIC STREAMING SITE"
         live="https://musicang.vercel.app"
-        repo="https://github.com/mrseego/Musica"
+        repo="https://github.com/seeego/Musica"
         position="left"
       />
 
@@ -22,7 +22,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         info="ECOMMERCE WEBSITE"
         live="https://ventashop.netlify.app"
         position="right"
-        repo="https://github.com/mrseego/venta-ecommerce"
+        repo="https://github.com/seeego/venta-ecommerce"
       />
 
       <ProjComp
@@ -30,7 +30,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, SASS & Typescript"
         info="AI NEWS WEBSITE"
         live="https://vanxnews.netlify.app"
-        repo="https://github.com/mrseego/vanxnews-ai"
+        repo="https://github.com/seeego/vanxnews-ai"
         position="left"
       />
 
@@ -39,7 +39,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
         info="AI CHAT BOT WEBSITE"
         live="https://robocht.vercel.app"
-        repo="https://github.com/mrseego/Robo-chat"
+        repo="https://github.com/seeego/Robo-chat"
         position="right"
       />
 
@@ -48,7 +48,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, Styled Components & Firebase"
         info="FINTECH WEBSITE"
         live="https://mybankr.netlify.app"
-        repo="https://github.com/mrseego/mybankr"
+        repo="https://github.com/seeego/mybankr"
         position="left"
       />
     </div>
