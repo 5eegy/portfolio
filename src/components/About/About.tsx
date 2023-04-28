@@ -68,7 +68,8 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         compatibility, and accessibility, and have worked in Agile environments
         using version control systems like Git. As a fast learner and team
         player, I am eager to collaborate with a dynamic organization to develop
-        innovative websites that meet the needs of clients and users. I take
+        innovative websites that meet the needs of clients and users. 
+        Aside of coding I also write articles which can be found on my medium page. I take
         ownership of my tasks and see them through to completion, but thrive in
         a collaborative environment where I can learn from and contribute to my team.`
           .split(" ")
@@ -86,7 +87,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
       </motion.p>
       <div className="block p-[1px] text-xs mt-5 mb-12 mx-3 w-28 rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
         <a
-          href="https://drive.google.com/file/d/1wSXM7mxbzKSfnbCmJfEbgT0HOfQEXft8/view"
+          href="https://drive.google.com/file/d/1yt_yk46vo5R79KjOSZ2I7F2OgFlHcRIB/view"
           target="_blank"
           className="block p-2 text-xs bg-black rounded-lg hover: text-center text-white text-opacity-70 font-openSauce"
         >

@@ -19,23 +19,28 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
   }
 
   return (
-    <div className="flex fixed top-0 left-0 w-full p-2 bg-black z-[1000]   font-neue">
+    <div className="flex fixed top-0 left-0 w-full p-2 bg-black z-[1000]   font-neue shadow-sm shadow-gray-800">
       <div className="w-1/2 flex ">
-        {window.screen.availWidth <= 1024 && openMenu ? (
-          <p
-            className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
-            onClick={navBar}
-          >
-            &#x2613;
-          </p>
-        ) : (
-          <p
-          className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
-          onClick={navBar}
-          >
-            &#x2630;
-          </p>
-        )}
+
+     {
+        window.screen.availWidth <= 1024 && <>
+         { openMenu ? (
+           <p
+             className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
+             onClick={navBar}
+           >
+             &#x2613;
+           </p>
+         ) : (
+           <p
+           className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
+           onClick={navBar}
+           >
+             &#x2630;
+           </p>
+         )}
+         </>
+     }
         {/* <p>&#x2613;</p> */}
         <div className="flex flex-col justify-center">
           <img src={Logo} alt="LOGO" className="inline-block w-24 h-8" />

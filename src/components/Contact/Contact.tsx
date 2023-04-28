@@ -10,12 +10,12 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         target="_blank"
         className="block text-2xl mt-5 mx-3 opacity-40"
       >
-        SegunOwo247@gmail.com
+       segunowo247@gmail.com
       </a>
 
       <div className="text-left mt-2 w-2/3 opacity-60 px-3">
         <a
-          href="https://github.com/mrseego"
+          href="https://github.com/seeego"
           target="_blank"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
@@ -24,7 +24,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://linkedin.com/in/mrseego"
+          href="https://linkedin.com/in/segunowo"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           linkedin
@@ -40,10 +40,18 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://medium/seego"
+          href="https://medium.com/seego"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           medium
+        </a>
+
+        <a
+          target="_blank"
+          href="https://dev.to/seego"
+          className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
+        >
+         devto
         </a>
       </div>
 
