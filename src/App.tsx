@@ -7,12 +7,21 @@ import Contact from "./components/Contact/Contact";
 import Intro from "./components/Intro/Intro";
 import Break from "./components/Others/Break";
 import Mobile from "./Nav/Mobile";
+import { Heading } from "./components/Others/Heading";
 
 function App() {
   const intro = useRef<HTMLDivElement>();
   const about = useRef<HTMLDivElement>();
   const works = useRef<HTMLDivElement>();
   const contact = useRef<HTMLDivElement>();
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+      setTimeout(() => {
+        setShowContent(true);
+      }, 3000);
+  
+  });
 
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -32,16 +41,22 @@ function App() {
   }
   return (
     <div className="bg-black text-white min-w-[200px] overflow-x-hidden font-openSauce">
-      <>
-        <Topinfo navBar={navBar} scroll={scroll} openMenu={openMenu} />
-        <Mobile openMenu={openMenu} scroll={scroll} />
-        <Intro ref={intro} />
-        <About ref={about} />
-        <Tools />
-        <Projects ref={works} />
-        <Break />
-        <Contact ref={contact} />
-      </>
+      {!showContent ? (
+        <div className="w-full flex justify-center items-center h-[100vh] ">
+          <Heading head="LOADING" />
+        </div>
+      ) : (
+        <>
+          <Topinfo navBar={navBar} scroll={scroll} openMenu={openMenu} />
+          <Mobile openMenu={openMenu} scroll={scroll} />
+          <Intro ref={intro} />
+          <About ref={about} />
+          <Tools />
+          <Projects ref={works} />
+          <Break />
+          <Contact ref={contact} />
+        </>
+      )}
     </div>
   );
 }
