@@ -97,7 +97,7 @@ function ProjComp({
           x: 0,
         }}
         viewport={{
-          // once: true,
+          once: true,
           amount: 0.3,
         }}
         transition={{ duration: 0.4 }}

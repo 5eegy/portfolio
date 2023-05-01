@@ -40,7 +40,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://medium.com/seego"
+          href="https://seego.medium.com"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           medium

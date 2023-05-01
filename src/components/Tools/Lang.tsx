@@ -14,7 +14,7 @@ const Lang = ({ children }: { children: string }) => {
       }}
       viewport={
         {
-          // once: true,
+          once: true,
         }
       }
       className={

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/20230424_105150.png";
 import Desktop from "../../Nav/Desktop";
+import { motion } from "framer-motion";
 
 const Topinfo = ({ navBar, scroll, openMenu }) => {
   const [time, setTime] = useState(new Date());
@@ -26,14 +27,14 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
         window.screen.availWidth <= 1024 && <>
          { openMenu ? (
            <p
-             className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
+             className="w-8 text-2xl flex justify-start items-center cursor-pointer opacity-50 "
              onClick={navBar}
            >
              &#x2613;
            </p>
          ) : (
            <p
-           className="w-8 text-2xl flex justify-start items-center cursor-pointer  "
+           className="w-8 text-2xl flex justify-start items-center cursor-pointer opacity-50 "
            onClick={navBar}
            >
              &#x2630;
@@ -42,9 +43,23 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
          </>
      }
         {/* <p>&#x2613;</p> */}
-        <div className="flex flex-col justify-center">
+        <motion.div 
+        className="flex flex-col justify-center"
+        initial={{
+          opacity: 0.4
+        }}
+
+        animate={{
+          opacity: [0.2, 0.4, 0.2]
+        }}
+
+        transition={{
+          repeat: Infinity,
+          duration:2
+        }}
+        >
           <img src={Logo} alt="LOGO" className="inline-block w-24 h-8" />
-        </div>
+        </motion.div>
 
         <Desktop scroll={scroll} />
       </div>
