@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export const Heading = ({
   head,
-  position,
+  position = "right",
 }: {
   head: string;
-  position: string;
+  position?: string;
 }) => {
   return (
     <div className=" border-b border-white border-opacity-20 w-full flex justify-between font-openSauce">

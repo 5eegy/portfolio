@@ -77,7 +77,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             return (
               <span
                 key={i}
-                className="opacity-50 hover:opacity-100 hover:text-base lg:hover:text-xl hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200"
+                className="opacity-50 hover:opacity-100  hover:bg-gradient-to-r duration-300 hover:from-purple-400 hover:via-red-200 hover:bg-clip-text hover:text-transparent hover:to-yellow-200"
               >
                 {item.toUpperCase()}{" "}
               </span>
