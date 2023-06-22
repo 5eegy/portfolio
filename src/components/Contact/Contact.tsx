@@ -8,14 +8,14 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
       <a
         href="mailto:segunowo247@gmail.com"
         target="_blank"
-        className="block text-2xl mt-5 mx-3 opacity-40"
+        className="block text-2xl mt-5 mx-3 opacity-40 underline underline-offset-4 w-1/3 py-3"
       >
-       segunowo247@gmail.com
+       L4BI MAIL
       </a>
 
       <div className="text-left mt-2 w-2/3 opacity-60 px-3">
         <a
-          href="https://github.com/seeego"
+          href="https://github.com/l4bi"
           target="_blank"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
@@ -24,7 +24,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://linkedin.com/in/segunowo"
+          href="https://linkedin.com/in/labi"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           linkedin
@@ -32,7 +32,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://twitter.com/seego"
+          href="https://twitter.com/sirlabi"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           twitter
@@ -40,7 +40,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://seego.medium.com"
+          href="https://l4bi.medium.com"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           medium
@@ -48,14 +48,14 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://dev.to/seego"
+          href="https://dev.to/labi"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
          devto
         </a>
       </div>
 
-      <p className="text-xl opacity-30 text-center my-8">&copy; SEEGO 2023</p>
+      <p className="text-xl opacity-30 text-center my-8">&copy; LABI 2023</p>
     </div>
   );
 });

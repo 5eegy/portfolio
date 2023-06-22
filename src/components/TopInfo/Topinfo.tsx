@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "../../assets/20230424_105150.png";
+import Logo from "../../assets/20230622_235808.png";
 import Desktop from "../../Nav/Desktop";
 import { motion } from "framer-motion";
 
@@ -20,7 +20,7 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
   }
 
   return (
-    <div className="flex fixed top-0 left-0 w-full p-2 bg-black z-[1000]   font-neue shadow-sm shadow-gray-800">
+    <div className="flex fixed top-0 left-0 w-full  px-2 bg-black z-[1000]   font-neue shadow-sm shadow-gray-800">
       <div className="w-1/2 flex ">
 
      {
@@ -58,7 +58,7 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
           duration:2
         }}
         >
-          <img src={Logo} alt="LOGO" className="inline-block w-24 h-8" />
+          <img src={Logo} alt="LOGO" className="inline-block w-40 p-0 h-20" />
         </motion.div>
 
         <Desktop scroll={scroll} />
