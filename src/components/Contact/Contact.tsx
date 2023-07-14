@@ -10,12 +10,12 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         target="_blank"
         className="block text-2xl mt-5 mx-3 opacity-40 underline underline-offset-4 w-1/3 py-3"
       >
-       L4BI MAIL
+       SEGY MAIL
       </a>
 
       <div className="text-left mt-2 w-2/3 opacity-60 px-3">
         <a
-          href="https://github.com/l4bi"
+          href="https://github.com/5egy"
           target="_blank"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
@@ -24,7 +24,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://linkedin.com/in/labi"
+          href="https://linkedin.com/in/segy"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           linkedin
@@ -32,7 +32,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://twitter.com/sirlabi"
+          href="https://twitter.com/segy_o"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           twitter
@@ -40,7 +40,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://l4bi.medium.com"
+          href="https://segy.medium.com"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           medium
@@ -48,14 +48,14 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://dev.to/labi"
+          href="https://dev.to/5egy"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
          devto
         </a>
       </div>
 
-      <p className="text-xl opacity-30 text-center my-8">&copy; LABI 2023</p>
+      <p className="text-xl opacity-30 text-center my-8">&copy; SEGY 2023</p>
     </div>
   );
 });

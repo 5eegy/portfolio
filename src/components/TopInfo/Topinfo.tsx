@@ -58,7 +58,9 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
           duration:2
         }}
         >
-          <img src={Logo} alt="LOGO" className="inline-block w-40 p-0 h-20" />
+          {/* <img src={Logo} alt="LOGO" className="inline-block w-40 p-0 h-20" /> */}
+
+          <p className="p-2 text-4xl">SEGY</p>
         </motion.div>
 
         <Desktop scroll={scroll} />
