@@ -12,7 +12,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="ReactJs, Tailwind,Redux-Toolkit, Firebase"
         info="MUSIC STREAMING SITE"
         live="https://musicang.vercel.app"
-        repo="https://github.com/L4bi/Musica"
+        repo="https://github.com/5egy/Musica"
         position="left"
       />
 
@@ -22,7 +22,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         info="ECOMMERCE WEBSITE"
         live="https://ventashop.netlify.app"
         position="right"
-        repo="https://github.com/L4bi/venta-ecommerce"
+        repo="https://github.com/5egy/venta-ecommerce"
       />
 
       <ProjComp
@@ -30,7 +30,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, SASS & Typescript"
         info="AI NEWS WEBSITE"
         live="https://vanxnews.netlify.app"
-        repo="https://github.com/L4bi/vanxnews-ai"
+        repo="https://github.com/5egy/vanxnews-ai"
         position="left"
       />
 
@@ -39,7 +39,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
         info="AI CHAT BOT WEBSITE"
         live="https://robocht.vercel.app"
-        repo="https://github.com/L4bi/Robo-chat"
+        repo="https://github.com/5egy/Robo-chat"
         position="right"
       />
 
@@ -48,7 +48,25 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, Styled Components & Firebase"
         info="FINTECH WEBSITE"
         live="https://mybankr.netlify.app"
-        repo="https://github.com/L4bi/mybankr"
+        repo="https://github.com/5egy/mybankr"
+        position="left"
+      />
+
+<ProjComp
+        name="BAZAAR"
+        stacks="NextJS & SanityCMS"
+        info="ECOMMERCE WEBSITE"
+        live="https://bazaarshop.vercel.app/"
+        repo="https://github.com/5egy/bazaar-ecommerce"
+        position="right"
+      />
+
+<ProjComp
+        name="BLOG APP"
+        stacks="React, Nodejs, MongoDB & Express"
+        info="SIMPLE BLOG WEBSITE"
+        live="https://segyblog.vercel.app"
+        repo="https://github.com/5egy/oi-web-dev-assessment"
         position="left"
       />
     </div>
