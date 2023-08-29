@@ -47,7 +47,7 @@ const Mobile = ({ openMenu, scroll }) => {
           </li>
           <li className="block p-[1px] text-xs mx-3 mb-12 w-full rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
         <a
-          href="https://drive.google.com/file/d/1lQ1s9q0NTl2UFGQdx4OuiMiqdSryVZsi/view"
+          href="https://drive.google.com/file/d/19fMVTRg2jat4lAvn4O26DbHo5zuUPrlT/view?usp=drive_open"
           target="_blank"
           className="block p-2 text-xs bg-black rounded-lg hover: text-center text-white text-opacity-70 font-openSauce"
         >
