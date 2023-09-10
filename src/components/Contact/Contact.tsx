@@ -10,12 +10,12 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         target="_blank"
         className="block text-2xl mt-5 mx-3 opacity-40 underline underline-offset-4 w-1/3 py-3"
       >
-       SEH'G MAIL
+       SEEGO MAIL
       </a>
 
       <div className="text-left mt-2 w-2/3 opacity-60 px-3">
         <a
-          href="https://github.com/seh-g"
+          href="https://github.com/seeg0"
           target="_blank"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
@@ -32,7 +32,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://twitter.com/_sehg"
+          href="https://twitter.com/seego"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           twitter
@@ -40,7 +40,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://sehg.medium.com"
+          href="https://seego.medium.com"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
           medium
@@ -48,14 +48,14 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <a
           target="_blank"
-          href="https://dev.to/sehg"
+          href="https://dev.to/seego"
           className="inline-block border m-1 p-1 w-20  text-xl bg-black rounded-lg hover: text-center"
         >
          devto
         </a>
       </div>
 
-      <p className="text-xl opacity-30 text-center my-8">&copy; SEH'G 2023</p>
+      <p className="text-xl opacity-30 text-center my-8">&copy; SEEGO 2023</p>
     </div>
   );
 });

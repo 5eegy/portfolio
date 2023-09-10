@@ -31,7 +31,7 @@ const Desktop = ({ scroll }) => {
           </li>
           <li className="block  text-base p-[1px] w-full rounded-lg bg-gradient-to-r duration-400 from-pink-400 via-red-400 to-yellow-400 hover:to-pink-400 hover:from-red-400 hover:via-yellow-400 hover:shadow-md hover:shadow-yellow-400">
         <a
-          href="https://drive.google.com/file/d/19fMVTRg2jat4lAvn4O26DbHo5zuUPrlT/view?usp=drive_open"
+          href="https://drive.google.com/file/d/1K3w0Gs4XQFh0hUmlyttEHqJio1O422oQ/view"
           target="_blank"
           className="block text-base bg-black rounded-lg hover: text-center text-white text-opacity-70 py-1 px-[1px]"
         >

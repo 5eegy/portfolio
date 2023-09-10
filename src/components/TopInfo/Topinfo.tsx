@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from "../../assets/20230622_235808.png";
 import Desktop from "../../Nav/Desktop";
 import { motion } from "framer-motion";
 
@@ -60,7 +59,7 @@ const Topinfo = ({ navBar, scroll, openMenu }) => {
         >
           {/* <img src={Logo} alt="LOGO" className="inline-block w-40 p-0 h-20" /> */}
 
-          <p className="p-2 text-4xl">SEH'G</p>
+          <p className="p-2 text-4xl">SEEGO</p>
         </motion.div>
 
         <Desktop scroll={scroll} />
