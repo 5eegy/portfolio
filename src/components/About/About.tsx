@@ -37,7 +37,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <p className=" border border-white opacity-20 z-[100] w-full h-full"></p>
         <p className="mt-8 text-center text-white text-xs font-neue">
           <span className=" opacity-20">A RARE PICTURE OF</span>{" "}
-          <span className="text-white opacity-50">SEEGO</span>{" "}
+          <span className="text-white opacity-50">SEHGY</span>{" "}
           <span className="opacity-20">IN HIS</span>{" "}
           <span className="text-white opacity-50">LAGBAJA</span>{" "}
           <span className="opacity-20">MODE</span>
@@ -64,7 +64,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         }}
         className="lg:text-center text-left lg:px-8 mt-16 p-3 text-white mx-auto lg:w-2/3 font-roboto text-sm lg:text-lg"
       >
-        {`Hi, I'm Seego, a software developer with 2-years experience Passionate about building visually stunning and user-friendly web applications fromscratch. I excel in HTML, CSS, and JavaScript, and am well-versed in frameworks and technologies like Typescript, Firebase, Redux, React, and Nextjs. I have experience with responsive design, cross-browser
+        {`Hi, I'm Sehgy, a software developer with 2-years experience Passionate about building visually stunning and user-friendly web applications fromscratch. I excel in HTML, CSS, and JavaScript, and am well-versed in frameworks and technologies like Typescript, Firebase, Redux, React, and Nextjs. I have experience with responsive design, cross-browser
         compatibility, and accessibility, and have worked in Agile environments
         using version control systems like Git. As a fast learner and team
         player, I am eager to collaborate with a dynamic organization to develop
