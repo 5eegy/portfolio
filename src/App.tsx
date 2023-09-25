@@ -43,7 +43,7 @@ function App() {
     <div className="bg-black text-white min-w-[200px] overflow-x-hidden font-openSauce">
       {!showContent ? (
         <div className="w-full flex justify-center items-center h-[100vh] ">
-          <Heading head="S E E G O" />
+          <Heading head="S E H G Y" />
         </div>
       ) : (
         <>
