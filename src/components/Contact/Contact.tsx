@@ -55,7 +55,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         </a>
       </div>
 
-      <p className="text-xl opacity-30 text-center my-8">&copy; SEEGO 2023</p>
+      <p className="text-xl opacity-30 text-center my-8">&copy; SEHGY 2023</p>
     </div>
   );
 });
