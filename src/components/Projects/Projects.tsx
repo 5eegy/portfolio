@@ -12,7 +12,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="ReactJs, Tailwind,Redux-Toolkit, Firebase"
         info="MUSIC STREAMING SITE"
         live="https://musicang.vercel.app"
-        repo="https://github.com/seeg0/Musica"
+        repo="https://github.com/sehgy/Musica"
         position="left"
       />
 
@@ -22,7 +22,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         info="ECOMMERCE WEBSITE"
         live="https://ventashop.netlify.app"
         position="right"
-        repo="https://github.com/seeg0/venta-ecommerce"
+        repo="https://github.com/sehgy/venta-ecommerce"
       />
 
       <ProjComp
@@ -30,7 +30,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, SASS & Typescript"
         info="AI NEWS WEBSITE"
         live="https://vanxnews.netlify.app"
-        repo="https://github.com/seeg0/vanxnews-ai"
+        repo="https://github.com/sehgy/vanxnews-ai"
         position="left"
       />
 
@@ -39,7 +39,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="HTML, CSS, Typescript, NodeJS & ExpressJS"
         info="AI CHAT BOT WEBSITE"
         live="https://robocht.vercel.app"
-        repo="https://github.com/seeg0/Robo-chat"
+        repo="https://github.com/sehgy/Robo-chat"
         position="right"
       />
 
@@ -48,7 +48,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, Styled Components & Firebase"
         info="FINTECH WEBSITE"
         live="https://mybankr.netlify.app"
-        repo="https://github.com/seeg0/mybankr"
+        repo="https://github.com/sehgy/mybankr"
         position="left"
       />
 
@@ -57,7 +57,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="NextJS & SanityCMS"
         info="ECOMMERCE WEBSITE"
         live="https://bazaarshop.vercel.app/"
-        repo="https://github.com/seeg0/bazaar-ecommerce"
+        repo="https://github.com/sehgy/bazaar-ecommerce"
         position="right"
       />
 
@@ -66,7 +66,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         stacks="React, Nodejs, MongoDB & Express"
         info="SIMPLE BLOG WEBSITE"
         live="https://segyblog.vercel.app"
-        repo="https://github.com/seeg0/oi-web-dev-assessment"
+        repo="https://github.com/sehgy/oi-web-dev-assessment"
         position="left"
       />
     </div>
